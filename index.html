@@ -20,7 +20,8 @@
                     minlength="2"
                     maxlength="35"
                     id="firstname" 
-                    name="firstname">
+                    name="firstname"
+                    required />
                 </span>
                 <span class='required-field'>*
                     <label for="lastname">Your Last Name</label>
@@ -28,14 +29,15 @@
                     minlength="2" 
                     maxlength="35"
                     id="lastname" 
-                    name="lastname">
+                    name="lastname"
+                    required />
                 </span>
             </div>
             <fieldset>
                 <legend><b>Your Contact Info</b></legend>
                 <span class='required-field'>*
                     <label for="email">Your Email Address</label>
-                    <input type="text" id="email" name="email">
+                    <input type="text" id="email" name="email" required />
                 </span>
                 <label for="address">Your Street Address</label>
                 <input type="text" id="address" name="address">
@@ -95,6 +97,9 @@
                 </select>
                 <label for="zipcode">Your Zipcode</label>
                 <input type="text" id="zipcode" name="zipcode">
+                <label for="age">Your Age</label>
+                <input type="number" name="age" id="age" min="21" max="120">
+                <h5>Disclaimer: Must be 21 Years or Older to Enter the Contest</h5>
             </fieldset>
             <fieldset>
                 <legend><b>Your Preferences</b></legend>
