@@ -12,18 +12,31 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form method="get" action="results.html"> <!-- TODO: Set Action and Method Properties -->
+        <form method="get" action="results.html"> 
             <div>
-                <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
-                <!-- TODO: Create a "lastname" input with type "text" -->
-                <label for="lastname">Your Last Name</label>
-                <input type="text" id="lastname" name="lastname">
+                <span class='required-field'>*
+                    <label for="firstname">Your First Name</label>
+                    <input type="text" 
+                    minlength="2"
+                    maxlength="35"
+                    id="firstname" 
+                    name="firstname">
+                </span>
+                <span class='required-field'>*
+                    <label for="lastname">Your Last Name</label>
+                    <input type="text"
+                    minlength="2" 
+                    maxlength="35"
+                    id="lastname" 
+                    name="lastname">
+                </span>
             </div>
             <fieldset>
                 <legend><b>Your Contact Info</b></legend>
-                <label for="email">Your Email Address</label>
-                <input type="text" id="email" name="email">
+                <span class='required-field'>*
+                    <label for="email">Your Email Address</label>
+                    <input type="text" id="email" name="email">
+                </span>
                 <label for="address">Your Street Address</label>
                 <input type="text" id="address" name="address">
                 <label for="city">Your City</label>
